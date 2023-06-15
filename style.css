@@ -1,0 +1,1084 @@
+:root {
+    --fonte-primaria: 'Outfit', sans-serif;
+    --fonte-secundaria: 'Circular Std Book', sans-serif;
+    --fonte-nav: 'SF Mono', monospace;
+
+    --cor-primaria: #CA143C;
+    --cor-secundaria: #e0e0e0;
+    --cor-terciaria: #5d5f64;
+    --cor-preto: #0C0C0C;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    /*suavização do scroll*/
+    scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+
+@font-face {
+    font-family: [Circular Std Book];
+    src: url(Circular-Std-Book.ttf);}
+
+@font-face {
+    font-family: [SF Mono];
+    src: url(SF-Mono.ttf);}
+
+
+
+/* Estilizando a barra de rolagem */
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: #141414;}
+  
+  /* Estilizando o "polegar" da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: var(--cor-terciaria);}
+  
+
+body {
+    background-color: #141414;}
+
+
+
+/*-------------------- Nav -------------------*/
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 10vh;
+}
+
+
+#logo{
+    display: flex;
+    align-items: center;
+
+    margin-left: 150px;
+}
+
+    
+   
+#logo-ani{
+    margin-right: 16px;
+
+    font-family: var(--fonte-primaria);
+    font-weight: bold;
+    font-size: 30px;
+    
+    color: var(--cor-secundaria);
+
+    animation: icon 2.5s ease-in-out infinite;
+}
+
+@keyframes icon {
+    0%, 100%{   /*from, to*/
+		transform:translatey(0)
+	}
+	50%{ 
+		transform:translateX(15px)
+	}
+}
+
+
+#logo-img img{
+    width: 220px;
+}
+
+
+
+#nav-list{
+    display: flex;
+    flex-direction: row;
+
+    margin-right: 150px;
+
+    list-style: none; 
+}
+
+#nav-list li {
+    /*Espaço entre os itens do li*/
+    margin-left: 55px;
+
+    font-size: 15px;
+    font-weight: 500;
+    font-family: var(--fonte-nav);
+}
+
+#nav-list li:hover{
+    cursor: pointer;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+
+    transition: 0.2s;
+}
+
+nav a:hover{
+    color: var(--cor-primaria);
+}
+
+#barra{
+    color: var(--cor-primaria);
+}
+
+
+#fechar{
+    display: none;
+    color: var(--cor-primaria);
+}
+
+
+#itensBurg{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    display: none;
+
+    list-style: none; 
+      
+    color: var(--cor-secundaria);
+}
+
+#itensBurg li {
+    /*Espaço entre os itens do li*/
+    margin-top: 8px;
+    
+    font-size: 15px;
+    font-weight: 500;
+    font-family: var(--fonte-nav);
+}
+
+#itensBurg a {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+
+
+main{
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 1025px;
+    height: 90vh;
+    
+}
+
+
+
+/*-------------------- Luan Santos -------------------*/
+
+#luan-santos{
+    margin: 50px;
+}
+
+
+#luan-santos-text1{
+    margin-top: 25px;
+
+    font-size: 60px;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 75px;
+
+    color: var(--cor-secundaria);
+}
+
+#luan-santos-text2{
+    margin-top: 45px;
+    margin-bottom: 190px;
+
+    font-size: 18px;
+    font-family: var(--fonte-nav);
+    font-weight: 400;
+    line-height: 30px;
+
+    color: var(--cor-terciaria);
+}
+
+
+#luan-santos p {
+    font-size: 18px;
+    font-family: var(--fonte-nav);
+    font-weight: 400;
+
+    color: var(--cor-primaria);
+    }
+
+/*-------------------- Sobre mim -------------------*/
+
+#sobre-mim{
+    display: grid;
+    /*Número de colunas a ser criadas e o tamanho.*/
+    grid-template-columns: 2fr 1fr;
+    /*Tamanho das linhas*/
+    grid-template-rows: 1fr;
+    
+    margin: 50px;
+    margin-bottom: 190px;    
+}
+
+#sobre-mim h1 {
+    margin-bottom: 25px;
+    margin-top: 50px;
+
+    font-family: var(--fonte-primaria);
+    font-size: 24px;
+
+    color: var(--cor-secundaria);
+}
+
+#sobre-mim p {
+    margin-bottom: 25px;
+
+    font-family: var(--fonte-secundaria);
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 28px;
+
+    color: var(--cor-terciaria);
+}
+
+#tecnologias ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+#tecnologias li{
+    list-style: none;
+}
+
+#tecnologias p{
+    display: inline;
+    margin-left: 10px;
+    
+    font-family: var(--fonte-nav);
+    color: var(--cor-terciaria);
+}
+
+#tecnologias{
+    font-size: 18px;
+}
+
+#tecnologias i{
+    font-size: 12px;
+}
+
+#sobre-mim-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sobre-mim-img-flut{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    height: 270px;
+    width: 280px;
+
+}
+
+
+/*--------------------animação-da-img-------------------*/
+
+@keyframes float{
+	0%, 100%{
+		transform:translatey(0)
+	}
+	50%{
+		transform:translatey(-35px)
+	}
+}
+
+#efeito-flutuante-infinito {
+     animation: float 2s ease-in-out infinite;
+}
+
+
+/*-------------------- Projetos -------------------*/
+
+#projetos{
+    display: grid;
+    /*Número de colunas a ser criadas e o tamanho.*/
+    grid-template-columns: 1fr;
+    /*Tamanho das linhas*/
+    grid-template-rows: 130px;
+
+    margin: 50px;  
+}
+
+#projetos-text h1{
+    margin-bottom: 25px;
+    margin-top: 50px;
+
+    font-family: var(--fonte-primaria);
+    font-size: 24px;
+
+    color: var(--cor-secundaria);
+}
+
+#projetos-text p{
+    font-family: var(--fonte-secundaria);
+    font-size: 18px;
+    letter-spacing: 1px;
+
+    color: var(--cor-terciaria);
+}
+
+
+.proj{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    justify-content: space-around;
+
+    margin-top: 50px;
+}
+
+
+.proj-boxes{
+    background-color: var(--cor-preto);
+    border-radius: 8px;
+    height: 400px;
+
+    transition: 0.2s;
+}
+
+.proj-boxes:hover{
+    height: 415px;
+    border: 1px solid;
+    border-color: var(--cor-primaria);
+}
+
+
+.proj-icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.proj-icons i{
+    margin: 30px;
+    font-size: 40px;
+    color: var(--cor-primaria);
+}
+
+.proj-titulo{
+    margin: 30px;
+    /*titulo do nome do projeto*/
+    font-family: var(--fonte-primaria);
+    font-size: 20px;
+    color: var(--cor-secundaria);
+}
+
+.proj-desc{
+    margin: 30px;
+
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--fonte-secundaria);
+    line-height: 24px;
+
+    color: var(--cor-terciaria);
+}
+
+.proj-tecnologias{
+    margin-top: 100px;
+    margin-left: 30px;
+
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--fonte-nav);
+
+    color: var(--cor-terciaria);
+}
+    
+#github-icon-projeto{
+    margin-top: 38px;
+    font-size: 25px;
+
+    color: var(--cor-secundaria);
+
+    transition: 0.4s;
+}
+
+#github-icon-projeto:hover{
+    color: var(--cor-primaria);
+}
+
+
+
+
+
+#final{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 50px;
+    margin-top: 240px;
+}
+
+#final-text h1{
+    margin-bottom: 13px;
+
+    font-size: 28px;
+    font-family: var(--fonte-primaria);
+
+    color: var(--cor-secundaria);
+}
+
+#final-text p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 40px;
+
+    font-family: var(--fonte-secundaria);
+    font-size: 16px;
+    letter-spacing: 1px;
+
+    color: var(--cor-primaria);
+}
+
+#final-button button{
+    height: 40px;
+    width: 120px;
+
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: var(--cor-primaria);
+
+    font-family: var(--fonte-nav);
+    letter-spacing: 1px;
+
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+
+    transition: 0.2s;
+}
+
+#final-button button:hover{
+    width: 130px;
+
+    background-color: #141414;
+}
+
+
+#final-frase{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 100px;
+}
+
+#final-frase p{
+    margin-top: 100px;
+
+    font-size: 20px;
+    font-family: var(--fonte-nav);
+    font-style: oblique;
+    text-align: center;
+    letter-spacing: 1px;
+
+    color: var(--cor-terciaria);
+}
+
+
+#direitos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--cor-secundaria);
+}
+
+#direitos p{
+    font-size: 14px;
+    font-family: var(--fonte-secundaria);
+    letter-spacing: 1px;
+    line-height: 28px;
+
+    color: var(--cor-terciaria)
+}
+
+#direitos-all-rights{
+    margin-bottom: 30px;
+}
+
+
+#email-fixo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    bottom: 10%; 
+    right: 0%;
+    position: fixed;
+
+    height: 255px;
+    width: 50px;
+    
+    margin-right: 45px;
+}
+
+#email-fixo p{
+    font-size: 14px;
+    font-family: var(--fonte-nav);
+    letter-spacing: 2px;
+
+    color: var(--cor-terciaria);
+    writing-mode: vertical-rl;
+}
+
+
+
+
+#fixo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 25px;
+    
+    margin-left: 45px;
+    
+    bottom: 10%; 
+    left: 0%;
+    position: fixed;
+
+    height: 180px;
+    width: 50px;
+}
+    
+
+#github-icon {
+    color: var(--cor-secundaria);
+    font-size: 23px;  
+    transition: 0.4s;}
+#github-icon:hover{
+    color: var(--cor-primaria);
+    font-size: 24px;}
+
+
+#mail-icon {
+    color: var(--cor-secundaria);
+    font-size: 23px;  
+    transition: 0.4s;}
+#mail-icon:hover{
+    color: var(--cor-primaria);
+    font-size: 24px;}
+
+
+#linkedin-icon {
+    color: var(--cor-secundaria);
+    font-size: 23px;  
+    transition: 0.4s;}
+#linkedin-icon:hover{
+    color: var(--cor-primaria);
+    font-size: 24px;}
+
+
+#wpp-icon {
+    color: var(--cor-secundaria);
+    font-size: 23px;  
+    transition: 0.4s;}
+#wpp-icon:hover{
+    color: var(--cor-primaria);
+    font-size: 24px;}
+
+
+
+
+
+
+
+/*Big*/
+@media (min-width: 1281px){
+    #contatosMobile{
+        display: none;
+    }
+    #barra{
+        display: none;
+    }  
+}
+
+
+/*Small desktops or laptops*/
+@media  (min-width: 769px) and (max-width: 1280px){
+    #barra{
+        display: none;
+        }
+    /*-------------------- Luan Santos -------------------*/
+
+    #luan-santos{
+        margin: 100px;}
+    #luan-santos-text1{
+        font-size: 50px;}
+
+   
+    /*-------------------- Sobre mim -------------------*/
+
+    #sobre-mim{
+        margin: 100px;}
+
+
+    /*-------------------- Projetos -------------------*/
+
+    #projetos{
+        margin: 100px;}
+
+    /*-------------------- Fixo -------------------*/
+
+    #email-fixo{
+        margin-right: 25px;}
+    #fixo{
+         margin-left: 25px;}
+    #contatosMobile{
+        display: none;
+        }
+    }
+
+
+/*Tablets*/
+@media  (min-width: 481px) and (max-width: 768px){
+    
+
+    main{
+        max-width: 868px; /*test*/
+    }
+    
+
+    /*-------------------- Nav -------------------*/
+    nav{
+        margin-bottom:  130px;
+    }
+
+    #nav-list{
+        display: none;
+    }
+
+    #logo{
+        display: flex;
+        align-items: center;
+        margin-left: 90px;
+    }
+    #logo img{
+       width: 170px;
+    }
+   
+
+    #barra{
+        margin-right: 100px;
+        font-size: 35px;
+        }
+        
+    #fechar{
+        margin-right: 100px;
+        font-size: 35px;
+        }
+        
+
+    #itensBurg li {
+        font-size: 18px;
+        margin-right: 80px;
+        }
+        
+    #itensBurg a {
+        text-decoration: none;
+        color: var(--cor-secundaria);
+        }
+
+    /*-------------------- Luan Santos -------------------*/
+
+    #luan-santos{
+        margin: 80px;
+    }
+    #luan-santos-text1{
+        font-size: 34px;
+
+        letter-spacing: 1px;
+        line-height: 50px;
+    }
+    #luan-santos-text2{
+        font-size: 17px;
+
+        margin-bottom: 130px;
+    }
+    #luan-santos p {
+        font-size: 17px;
+    }
+
+    /*-------------------- Sobre mim -------------------*/
+
+    #sobre-mim{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+        
+        margin: 80px;
+        margin-bottom: 130px;
+    }
+
+    #sobre-mim h1 {
+        font-size: 21px;
+    }
+
+    #sobre-mim p {
+        font-size: 17px;
+    }
+
+    #sobre-mim-img{
+        margin-top: 70px;
+    }
+
+
+    /*-------------------- Projetos -------------------*/
+
+    #projetos{
+       margin: 80px;    
+    }
+
+    #projetos-text h1{
+        font-size: 21px;
+    }
+
+    #projetos-text p{
+        font-size: 17px;
+    }
+
+    .proj{
+        display: grid;
+        grid-template-columns: 280px;
+        grid-template-rows: 1fr;
+        grid-row-gap: 40px;
+        justify-content: space-around;
+
+        margin-top: 60px;
+    }
+
+    .proj-boxes{
+        height: 450px;
+    }
+    .proj-boxes:hover{
+        height: 465px;
+    }
+
+    .proj-icons i{
+        font-size: 30px;
+    }
+
+    .proj-titulo{
+        font-size: 19px;
+        
+    }
+
+
+    /*-------------------- Fixo -------------------*/
+
+    #email-fixo{
+        margin-right: 15px;
+        }
+    #fixo{
+         margin-left: 15px;
+        }
+    #contatosMobile{
+        display: none;
+        }
+    #direitos p{
+        font-size: 12px;
+        }
+
+    /*-------------------- Final -------------------*/
+
+    #final{
+        margin: 80px;
+        margin-top: 160px;
+        }
+        
+    #final-text h1{
+        font-size: 20px;
+        }
+        
+   
+    #final-frase p{
+        font-size: 16px;
+        }
+    
+    }
+
+
+@media  (max-width: 480px){
+    main{
+        max-width: 360px;
+    }
+
+    /*-------------------- Nav -------------------*/
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        margin-bottom:  40px;
+        }
+    #nav-list li {
+       display: none;
+        }
+    
+    #logo img{
+        width: 100px;
+        }
+    #logo-ani{
+        margin-right: 11px;
+        margin-bottom: 5px;
+
+        font-size: 15px;
+        }
+
+    @keyframes icon {
+        0%, 100%{   /*from, to*/
+            transform:translatey(0)
+            }
+        50%{ 
+            transform:translateX(7px)
+            }
+        }
+
+    #barra{
+        margin-right: 150px;
+        }
+        
+    #fechar{
+        margin-right: 150px;
+        }
+        
+
+    #itensBurg li {
+        font-size: 12px;
+        margin-right: 35px;
+        }
+        
+    #itensBurg a {
+        text-decoration: none;
+        color: var(--cor-secundaria);
+            
+        }
+    /*-------------------- Luan Santos -------------------*/
+
+    #luan-santos{
+        margin: 35px;
+    }
+
+
+    #luan-santos-text1{
+        letter-spacing: 1px;
+        line-height: 45px;
+
+        font-size: 25px;
+    }
+
+    #luan-santos-text2{
+        margin-top: 45px;
+        margin-bottom: 100px;
+
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+    }
+
+    #luan-santos p {
+        font-size: 14px;
+        font-family: var(--fonte-nav);
+        font-weight: 400;
+
+        color: var(--cor-primaria);
+    }
+
+
+
+    /*-------------------- Sobre-mim -------------------*/
+
+    #sobre-mim{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+        
+        margin: 35px;
+        margin-bottom: 100px;
+    }
+
+    #sobre-mim h1 {
+        font-size: 18px;
+    }
+
+    #sobre-mim p {
+        font-size: 15px;
+    }
+
+    #sobre-mim-img{
+        margin-top: 70px;
+    }
+
+    #sobre-mim-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #sobre-mim-img-flut{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    
+        height: 210px;
+        width: 140px;
+    
+    }
+
+    /*-------------------- Projetos -------------------*/
+
+    #projetos{
+        margin: 35px;  
+    }
+
+    #projetos-text h1{
+        font-size: 18px;
+    }
+
+    #projetos-text p{
+        font-size: 15px;
+    }
+
+    .proj{
+        display: grid;
+        grid-template-columns: 200px;
+        grid-template-rows: 1fr;
+        grid-row-gap: 30px;
+    
+        margin-top: 80px;
+    }
+
+    .proj-boxes{
+        height: 320px;
+
+    }
+
+    .proj-boxes:hover{
+        height: 325px;
+    }
+
+    .proj-icons i{
+        font-size: 25px;
+    }
+
+    .proj-titulo{
+        margin: 20px;
+        font-size: 18px;
+    }
+
+    .proj-desc{
+        margin: 20px;
+
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .proj-tecnologias{
+        margin-top: 60px;
+        margin-left: 20px;
+
+        font-size: 15px;
+    }
+        
+    #github-icon-projeto{
+        margin-top: 33px;
+
+        font-size: 20px;
+    }
+
+
+
+
+/*-------------------- Final -------------------*/
+
+    #final{
+        margin: 35px;
+        margin-top: 100px;
+    }
+    
+    #final-text h1{
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    
+    #final-text p{
+        font-size: 14px;
+    }
+    
+    #final-button button{
+        height: 33px;
+        width: 100px;
+    }
+    
+    #final-frase{
+        margin: 25px;
+    }
+    
+    #final-frase p{
+        margin-top: 70px;
+        font-size: 14px;
+    }
+    
+
+
+
+    #direitos p{
+        font-size: 10px;
+        line-height: 20px;
+    }
+    
+    #direitos-all-rights{
+        margin-bottom: 20px;
+    }
+
+
+
+/*-------------------- Fixo -------------------*/
+    #email-fixo{
+        display: none;
+    }
+
+    #fixo{
+        display: none;
+    }
+
+    #contatosMobile{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        gap: 18px;
+        height: 70px;
+        }
+
+    #contatosMobile i{
+        font-size: 19px;  
+            }
+}
