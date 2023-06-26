@@ -863,11 +863,13 @@ main{
 
     #barra{
         margin-right: 150px;
-        margin-bottom: 2px;
+        margin-bottom: 6px;
+        
         }
         
     #fechar{
         margin-right: 150px;
+        margin-bottom: 6px;
         }
         
 
@@ -892,20 +894,20 @@ main{
         letter-spacing: 1px;
         line-height: 45px;
 
-        font-size: 25px;
+        font-size: 23px;
     }
 
     #luan-santos-text2{
         margin-top: 45px;
         margin-bottom: 100px;
 
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
         line-height: 22px;
     }
 
     #luan-santos p {
-        font-size: 14px;
+        font-size: 13px;
         font-family: var(--fonte-nav);
         font-weight: 400;
 
@@ -926,11 +928,11 @@ main{
     }
 
     #sobre-mim h1 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     #sobre-mim p {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     #sobre-mim-img{
@@ -960,11 +962,11 @@ main{
     }
 
     #projetos-text h1{
-        font-size: 18px;
+        font-size: 16px;
     }
 
     #projetos-text p{
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .proj{
@@ -1034,8 +1036,8 @@ main{
     }
     
     #final-button button{
-        height: 33px;
-        width: 100px;
+        height: 30px;
+        width: 90px;
     }
     
     #final-frase{
@@ -1045,6 +1047,7 @@ main{
     #final-frase p{
         margin-top: 70px;
         font-size: 14px;
+        word-spacing: -4px;
     }
     
 
