@@ -3,6 +3,7 @@ function clickMenu() {
     var barra = document.getElementById("barra");
     var fechar = document.getElementById("fechar");
     
+    
     if (itensBurg.style.display === 'none') {
         itensBurg.style.display = 'block';
         barra.style.display = 'none';

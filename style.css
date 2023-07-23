@@ -842,12 +842,14 @@ main{
         }
     
     #logo img{
-        width: 130px;
+        width: 150px;
+        margin-top: 25px;
         margin-right: -25px;
         }
     #logo-ani{
         margin-right: 11px;
         margin-bottom: 5px;
+        margin-top: 25px;
 
         font-size: 15px;
         }
@@ -864,17 +866,19 @@ main{
     #barra{
         margin-right: 150px;
         margin-bottom: 6px;
-        
+        margin-top: 25px;
+        font-size: 28px;
         }
         
     #fechar{
         margin-right: 150px;
         margin-bottom: 6px;
+        margin-top: 25px;
+        font-size: 28px;
         }
-        
-
+    
     #itensBurg li {
-        font-size: 12px;
+        font-size: 15px;
         margin-right: 35px;
         }
         
@@ -901,13 +905,13 @@ main{
         margin-top: 45px;
         margin-bottom: 100px;
 
-        font-size: 14px;
+        font-size: 17px;
         font-weight: 400;
         line-height: 22px;
     }
 
     #luan-santos p {
-        font-size: 13px;
+        font-size: 17px;
         font-family: var(--fonte-nav);
         font-weight: 400;
 
@@ -928,11 +932,11 @@ main{
     }
 
     #sobre-mim h1 {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     #sobre-mim p {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     #sobre-mim-img{
@@ -962,11 +966,11 @@ main{
     }
 
     #projetos-text h1{
-        font-size: 16px;
+        font-size: 20px;
     }
 
     #projetos-text p{
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .proj{
@@ -1028,11 +1032,11 @@ main{
     
     #final-text h1{
         margin-bottom: 10px;
-        font-size: 16px;
+        font-size: 20px;
     }
     
     #final-text p{
-        font-size: 14px;
+        font-size: 16px;
     }
     
     #final-button button{
@@ -1046,7 +1050,7 @@ main{
     
     #final-frase p{
         margin-top: 70px;
-        font-size: 14px;
+        font-size: 16px;
         word-spacing: -4px;
     }
     
@@ -1054,7 +1058,7 @@ main{
 
 
     #direitos p{
-        font-size: 10px;
+        font-size: 12px;
         line-height: 20px;
     }
     
