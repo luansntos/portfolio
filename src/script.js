@@ -24,3 +24,6 @@ function clickFechar() {
     barra.style.display = 'block';
     fechar.style.display = 'none';
 }
+
+
+

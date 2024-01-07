@@ -269,6 +269,7 @@ main{
 
 #tecnologias{
     font-size: 18px;
+    margin: 20px;
 }
 
 #tecnologias i{
@@ -488,7 +489,7 @@ main{
 }
 
 #final-frase p{
-    margin-top: 100px;
+    margin-top: 30px;
 
     font-size: 20px;
     font-family: var(--fonte-nav);
